@@ -258,7 +258,6 @@ main {
 .icon-adv {
   width: 64px;
   height: 64px;
-  flex-shrink: 0;
 }
 .adv-el-head {
   color: var(--navyblue, #2e2f42);
