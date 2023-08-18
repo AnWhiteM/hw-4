@@ -68,6 +68,8 @@ body {
   flex-shrink: 0;
   padding-top: -5px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .navigation {
   display: flex;
@@ -95,7 +97,7 @@ body {
 }
 
 .nav-element {
-  color: var(--navyblue, #2e2f42);
+  color: #2e2f42;
   display: block;
   font-family: Roboto;
   font-size: 16px;
@@ -105,17 +107,26 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   padding: 24px 0;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.open-el {
+  color: #404bbf;
+}
+.open-el::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  width: 48px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-element:hover,
 .nav-element:focus {
-  color: var(--iris, #404bbf);
-}
-.nav-element:hover::before,
-.nav-element:focus::before {
-  width: 48px;
-  height: 4px;
-  background-color: rgba(64, 75, 191, 1);
-  content: "";
+  color: #404bbf;
 }
 
 .adrss {
@@ -138,6 +149,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-element:hover {
   color: var(--iris, #404bbf);
@@ -153,6 +165,7 @@ main {
 
 .hero-section {
   width: 1440px;
+  max-width: 1440px;
   height: 600px;
   padding: 188px 0;
   flex-shrink: 0;
@@ -163,6 +176,9 @@ main {
       rgba(46, 47, 66, 0.7)
     ),
     url(/images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   display: flex;
   text-align: center;
@@ -201,6 +217,7 @@ main {
   margin: auto;
   padding: auto;
   margin-top: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .os-button:hover {
   background-color: #404bbf;
