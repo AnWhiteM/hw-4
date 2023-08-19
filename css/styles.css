@@ -397,8 +397,13 @@ main {
   height: 16px;
   fill: rgba(244, 244, 253, 1);
 }
+.icons {
+  fill: #f4f4fd;
+}
 /* customers */
 .customers-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
   width: 1440px;
   height: 320px;
   background: #fff;
