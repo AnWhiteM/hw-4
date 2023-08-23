@@ -29,9 +29,13 @@
           >
 
           <ul class="nav-list">
-            <li><a href="./index.html" class="nav-element">Studio</a></li>
             <li>
-              <a href="./portfolio.html" class="nav-element">Portfolio</a>
+              <a href="./index.html" class="nav-element">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="nav-element open-el"
+                >Portfolio</a
+              >
             </li>
             <li><a href="" class="nav-element">Contacts</a></li>
           </ul>
@@ -75,7 +79,7 @@
           </ul>
           <ul class="portfolio-list">
             <li class="example-block">
-              <a href="#" class="link"
+              <a href="#" class="link-port"
                 ><img
                   src="./images/BankingApp.jpg"
                   alt="BankingApp"
@@ -88,10 +92,17 @@
                   </h2>
                   <p class="portfolio-ex-type">App</p>
                 </div>
+                <div class="ex-desc">
+                  <p class="ex-desc-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
               </a>
             </li>
             <li class="example-block">
-              <a href="#" class="link">
+              <a href="#" class="link-port">
                 <img
                   src="./images/CashlessPayment.jpg"
                   alt="CashlessPayment"
@@ -105,7 +116,7 @@
               </a>
             </li>
             <li class="example-block">
-              <a href="#" class="link">
+              <a href="#" class="link-port">
                 <img
                   src="./images/MeditationApp.jpg"
                   alt="MeditationApp"
@@ -119,7 +130,7 @@
               </a>
             </li>
             <li class="example-block">
-              <a href="#" class="link">
+              <a href="#" class="link-port">
                 <img
                   src="./images/Taxi.jpg"
                   alt="TaxiService"
@@ -133,7 +144,7 @@
               </a>
             </li>
             <li class="example-block">
-              <a href="#" class="link">
+              <a href="#" class="link-port">
                 <img
                   src="./images/ScreenBg.jpg"
                   alt="ScreenIllustrations"
@@ -147,7 +158,7 @@
               </a>
             </li>
             <li class="example-block">
-              <a href="#" class="link">
+              <a href="#" class="link-port">
                 <img
                   src="./images/HappyWoman.jpg"
                   alt="HappyWoman"
@@ -161,7 +172,7 @@
               </a>
             </li>
             <li class="example-block">
-              <a href="#" class="link">
+              <a href="#" class="link-port">
                 <img
                   src="./images/InstagramStories.jpg"
                   alt="InstagramStories"
@@ -175,7 +186,7 @@
               </a>
             </li>
             <li class="example-block">
-              <a href="#" class="link">
+              <a href="#" class="link-port">
                 <img
                   src="./images/OrganicFood.jpg"
                   alt="OrganicFood"
@@ -189,7 +200,7 @@
               </a>
             </li>
             <li class="example-block">
-              <a href="#" class="link">
+              <a href="#" class="link-port">
                 <img
                   src="./images/Coffee.jpg"
                   alt="Coffee"
@@ -207,16 +218,46 @@
       </section>
     </main>
     <footer class="footer-class">
-      <div class="container">
-        <a href="./index.html" class="footerlogo"
-          >Web<span class="footerlogo-white">Studio</span></a
-        >
+      <div class="container footer-container">
+        <div class="left-content">
+          <a href="./index.html" class="footerlogo"
+            >Web<span class="footerlogo-white">Studio</span></a
+          >
 
-        <p class="footer-text">
-          Increase the flow of customers and <br />
-          sales for your business with digital <br />
-          marketing & growth solutions.
-        </p>
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+        <div class="social-content">
+          <p class="social-title">Social media</p>
+          <ul class="footer-icon-list">
+            <li class="footer-icon-el">
+              <a href="" class="footer-icon-link"
+                ><svg width="24" height="24" class="footer-svg">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="footer-icon-el">
+              <a href="" class="footer-icon-link"
+                ><svg width="24" height="24" class="footer-svg">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="footer-icon-el">
+              <a href="" class="footer-icon-link"
+                ><svg width="24" height="24" class="footer-svg">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer-icon-el">
+              <a href="" class="footer-icon-link"
+                ><svg width="24" height="24" class="footer-svg">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
