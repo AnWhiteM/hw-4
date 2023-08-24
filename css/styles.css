@@ -181,6 +181,7 @@ main {
 
   display: flex;
   text-align: center;
+  margin: 0 auto;
 }
 .hero-text {
   color: var(--white, #fff);
@@ -307,8 +308,6 @@ main {
 
 /* Our Team  */
 .team-section {
-  width: 1440px;
-  height: 732px;
   flex-shrink: 0;
   background: var(--cloud, #f4f4fd);
   padding-top: 50px;
